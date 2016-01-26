@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Memory Match</title>
+		<meta content="" name="description">
+		<meta content="" name="keywords">
+		<meta content="text/html;charset=UTF-8" http-equiv="content-type">
+		<meta content="en-US" http-equiv="Content-Language">
+		
+		<link type="text/css" rel="stylesheet" media="all" href="static/css/memory-match/base.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="static/css/memory-match/widgets.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="static/css/memory-match/menu.css" />
+	</head>
+	<body>
+		<div id="menu_overlay">
+			<div id ="menu_div">
+				<h1>Memory Match</h1>
+				<h3>Select Your Difficulty</h3>
+				<div id="button_div">
+				</div>
+			</div>
+		</div>
+		<div id="main_div">
+			<div class="widget_container">
+				<div id="counter_widget" class="widget" style="display:none;">
+					<label class="widget_title">Game Stats</label>
+					<div class="counter_div widget_content">
+						<label id="guess_label">Guesses: <span></span></label>
+						<label id="matches_made_label">Matches Made: <span></span></label>
+						<label id="matches_left_label">Matches Left: <span></span></label>
+					</div>
+				</div>
+				<div id="card_color_widget" class="widget">
+					<label class="widget_title">Card Color</label>
+					<div class="colors_div widget_content">
+						<div class="color" style="background-color:#219163; color: #219163;" data-color="#219163"></div>
+						<div class="color" style="background-color:#638E01; color: #638E01;" data-color="#638E01"></div>
+						<div class="color" style="background-color:#DCA212; color: #DCA212;" data-color="#DCA212"></div>
+						<div class="color" style="background-color:#DB4E20; color: #DB4E20;" data-color="#DB4E20"></div>
+						<div class="color" style="background-color:#FC3741; color: #FC3741;" data-color="#FC3741"></div>
+						<div class="color" style="background-color:#8C2051; color: #8C2051;" data-color="#8C2051"></div>
+						<div class="color" style="background-color:#0A7CBB; color: #0A7CBB;" data-color="#0A7CBB"></div>
+						<div class="color" style="background-color:#4EBE90; color: #4EBE90;" data-color="#4EBE90"></div>
+						<div class="color" style="background-color:#83BC0B; color: #83BC0B;" data-color="#83BC0B"></div>
+						<div class="color" style="background-color:#E1C639; color: #E1C639;" data-color="#E1C639"></div>
+						<div class="color" style="background-color:#FF7F52; color: #FF7F52;" data-color="#FF7F52"></div>
+						<div class="color" style="background-color:#FF727A; color: #FF727A;" data-color="#FF727A"></div>
+						<div class="color" style="background-color:#C75B8C; color: #C75B8C;" data-color="#C75B8C"></div>
+						<div class="color" style="background-color:#3EB0EF; color: #3EB0EF;" data-color="#3EB0EF"></div>
+						<div class="color" style="background-color:#7BC2A4; color: #7BC2A4;" data-color="#7BC2A4"></div>
+						<div class="color" style="background-color:#9AC235; color: #9AC235;" data-color="#9AC235"></div>
+						<div class="color" style="background-color:#C9B96F; color: #C9B96F;" data-color="#C9B96F"></div>
+						<div class="color" style="background-color:#C89E88; color: #C89E88;" data-color="#C89E88"></div>
+						<div class="color" style="background-color:#C89B9D; color: #C89B9D;" data-color="#C89B9D"></div>
+						<div class="color" style="background-color:#C68AAA; color: #C68AAA;" data-color="#C68AAA"></div>
+						<div class="color selected" style="background-color:#87B6CE; color: #87B6CE;" data-color="#87B6CE"></div>
+					</div>
+				</div>
+				<button id="back_to_menu" class="menu_button short">Back to Menu</button>
+			</div>
+			<div class="card_table_container">
+				<table id="card_table">
+				</table>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="static/js/lib/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="static/js/lib/jquery-ui-1.10.3.min.js"></script>
+		<script type="text/javascript" src="static/js/lib/jquery.flip-v0.99.js"></script>
+		<script type="text/javascript" src="static/js/memory-match.js"></script>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+div#main_div div.widget_container
+{
+	display: inline-block;
+	height: 300px;
+    vertical-align: top;
+	padding: 10px;
+	text-align: center;
+}
+
+div.widget
+{
+	border-radius: 5px;
+	border: 2px solid #394343;
+	padding: 5px;
+	box-shadow: 1px 1px 1px 0 #999999;
+	width: 220px;
+	margin-bottom: 10px;
+}
+
+div.widget label.widget_title
+{
+	text-align: center;
+	color: #394343;
+    display: block;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+div.widget div.widget_content
+{
+    background-color: #FAFAFA;
+    border: 1px solid #C8C8C8;
+    padding-left: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+div#counter_widget label
+{
+	display: block;
+	margin-bottom: 5px;
+}
+
+div#counter_widget label span
+{
+	font-weight: bold;
+}
+
+div#card_color_widget div.colors_div div.color
+{
+    border: 3px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    height: 14px;
+    margin-bottom: 1px;
+    margin-right: 5px;
+    width: 14px;
+}
+
+div#card_color_widget div.colors_div div.color.selected
+{
+    border: 3px solid #715518;
+}

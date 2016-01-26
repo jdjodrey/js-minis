@@ -1,0 +1,61 @@
+#time_updated
+{
+	width: 200px;
+	text-align: center;
+}
+
+#time_updated label
+{
+	font-weight: bold;
+}
+
+#stock_container
+{
+	width: 200px;
+}
+
+.stock_row
+{
+	background-color: blue;
+	color: #FFFFFF;
+	font-size: 12pt;
+	width: 100%;
+}
+
+.stock_row div
+{
+	width: 32%;
+	text-align: center;
+	display: inline-block;
+}
+
+.stock_symbol
+{
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+.stock_price
+{
+	
+}
+
+.stock_change
+{
+	
+}
+
+.stock_change.none
+{
+	background-color: grey;
+}
+
+.stock_change.up
+{
+	background-color: green;
+}
+
+.stock_change.down
+{
+	background-color: red;
+}

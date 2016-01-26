@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simon Says</title>
+		<meta content="" name="description">
+		<meta content="" name="keywords">
+		<meta content="text/html;charset=UTF-8" http-equiv="content-type">
+		<meta content="en-US" http-equiv="Content-Language">
+		
+		<link type="text/css" rel="stylesheet" media="all" href="static/css/simon-says/base.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="static/css/simon-says/widgets.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="static/css/simon-says/menu.css" />
+	</head>
+	<body>
+		<div id="menu_overlay">
+			<div id ="menu_div">
+				<h1>Simon Says</h1>
+				<div id="button_div">
+					<button class="menu_button start">Start Game</button>
+				</div>
+			</div>
+		</div>
+		<div id="main_div">
+			<div class="widget_container">
+				<div id="counter_widget" class="widget" style="display:none;">
+					<label class="widget_title">Game Stats</label>
+					<div class="counter_div widget_content">
+						<label id="level_label">Level: <span></span></label>
+					</div>
+				</div>
+				<button id="back_to_menu" class="menu_button short">Back to Menu</button>
+			</div>
+			<div class="simon_says_container">
+				<table id="simon_says">
+					<tr>
+						<td class="green">
+							<div class="overlay_container"><div class="overlay"></div></div>
+						</td>
+						<td class="red">
+							<div class="overlay_container"><div class="overlay"></div></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="yellow">
+							<div class="overlay_container"><div class="overlay"></div></div>
+						</td>
+						<td class="blue">
+							<div class="overlay_container"><div class="overlay"></div></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="static/js/lib/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="static/js/lib/jquery-ui-1.10.3.min.js"></script>
+		<script type="text/javascript" src="static/js/simon-says.js"></script>
+	</body>
+</html>
