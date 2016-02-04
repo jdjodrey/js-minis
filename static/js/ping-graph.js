@@ -1,8 +1,8 @@
 var GLOBAL_TIMEOUT_ID = -1;
 var GLOBAL_NUM_POINTS = 100;
-var GLOBAL_INTERVAL_MS = 100;
+var GLOBAL_INTERVAL_MS = 250;
 var GLOBAL_TIMEOUT_FLAG = true;
-var GLOBAL_SERVER_NAME = 'www.google.com';
+var HOST = 'www.yahoo.com';
 
 var data = [];
 var plot = null;
@@ -16,14 +16,13 @@ $(document).ready(function()
 		},
 		yaxis: {
 			min: 0,
-			max: 1000
+			max: 1000,
+			axisLabel: "Ping (ms)"
 		},
 		xaxis: {
 			show: false
-		}
+		},
 	});
-	
-	generateData();
 });
 
 function initialData()
@@ -47,7 +46,7 @@ function generateData()
 {
 	data = data.slice(1);
 	
-	pingServer(GLOBAL_SERVER_NAME, update);
+	pingServer(HOST, update);
 }
 
 function update()
@@ -80,6 +79,26 @@ function pingServer(server_name, callback)
 		callback();
 	});
 }
+
+$('#go_button').click(function()
+{
+	var new_host = $.trim($('#ping_host').val());
+	if (!new_host.match("^www\.") || !new_host.match("\.[com|org|edu|net]$"))
+	{
+		alert("Please enter a valid site address, i.e: www.example.[com|org|edu|net]");
+		return;
+	}
+
+	if (GLOBAL_TIMEOUT_ID !== -1)
+	{
+		clearTimeout(GLOBAL_TIMEOUT_ID);
+	}
+	
+	console.log(HOST + " --> " + new_host);
+	GLOBAL_TIMEOUT_FLAG = true;
+	HOST = new_host;
+	generateData();
+});
 
 $('#stop_button').click(function()
 {
